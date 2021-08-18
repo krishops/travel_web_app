@@ -1,3 +1,14 @@
+As a user, I want to GET reviews about travel destinations.
+As a user, I want to GET reviews by country or city.
+As a user, I want to see the most popular travel destinations by number of reviews or by overall rating.
+As a user, I want to look up random destinations just for fun.
+
+As a admin, I want to PUT and DELETE reviews.
+As an admin, I want to be able to POST new reviews about travel destinations.
+
+
+
+
 ## Description
 
 This is a basic scaffolded Rails project using Docker with Ruby 2.6.5, Rails 5.2.4, and Postgres 12.1. This project can be used in lieu of installing Ruby, Rails and Postgres on your machine. When you run `docker-compose up`, Docker will create two containers on your machine: a Ruby/Rails environment running the local server and a Postgres container where your database is stored.
