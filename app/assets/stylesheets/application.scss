@@ -13,5 +13,49 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ body{
+  background-image: url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  // background-size: cover;
+  // height: 500px;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  text-align: center; 
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.menu {
+  background-color: black;
+  color: antiquewhite;
+}
+
+.row {
+  background-color: antiquewhite;
+}
+
+.form-control {
+  background-color: antiquewhite;
+  height: fit-content;
+}
+
+.nav-item {
+  color: white;
+}
+
+// .container {
+//   color: antiquewhite;
+//   opacity: 50%;
+// }
+
+.results {
+  color: black;
+}
+
+h4  {
+  text-align: left;
+}

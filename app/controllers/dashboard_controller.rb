@@ -1,7 +1,7 @@
 class DashboardController < ApplicationController
 
   def index
-    render :index
+    @reviews = HTTParty.get('https://boiling-gorge-40516.herokuapp.com/reviews')
   end
 
   def country

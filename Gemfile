@@ -38,8 +38,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'jquery-rails'
 gem 'faker'
 gem 'httparty'
-gem 'bootstrap-sass', '~> 3.4.1'
-gem 'sassc-rails', '>= 2.1.0'
+gem 'bootstrap', '~> 5.0.1'
+gem 'sassc-rails'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

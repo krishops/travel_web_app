@@ -1,18 +1,46 @@
+<div class="row">
+<h4><u>Search Reviews</u></h2>
+</div>
+<div class="row">
+<div class="col-md-6">
 <form method="GET" action="/dashboard/country">
   <div class="form-control">
-    <label for="country">Search for Country Reviews</label>
+    <label for="country">Search by Country</label>
     <input type="text" name="country" id="country">
-    <button type="submit" class="btn btn-primary">Search</button>
+    <button type="submit" class="btn btn-dark btn-sm">Search</button>
   </div>
 </form>
+</div>
 
+<div class="col-md-6">
 <form method="GET" action="/dashboard/city">
   <div class="form-control">
-    <label for="city">Search for City Reviews</label>
+    <label for="city">Search for by City</label>
     <input type="text" name="city" id="city">
-    <button type="submit" class="btn btn-primary">Search</button>
+    <button type="submit" class="btn btn-dark btn-sm">Search</button>
   </div>
 </form>
+</div>
+<h4><u>All Reviews</u></h4>
+</div>
+
+<div class="row">
+  <%= @reviews.each do |r| %>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><%= r['city'] %>, <%= r['country'] %></h5>
+          <p class="card-text">Author: <%= r['author'] %></p>
+          <p class="card-text">Review: <%= r['content'] %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
 
 
 

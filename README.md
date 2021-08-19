@@ -6,7 +6,9 @@ As a user, I want to look up random destinations just for fun.
 As a admin, I want to PUT and DELETE reviews.
 As an admin, I want to be able to POST new reviews about travel destinations.
 
-
+<p>Country: <%= r['country'] %></p>
+  <p>Author: <%= r[author] %></p>
+  <p>Review: <%= r[content] %></p>
 
 
 ## Description

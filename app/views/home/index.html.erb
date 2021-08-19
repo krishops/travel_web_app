@@ -1,0 +1,11 @@
+
+
+<%= @mostpopular.each do |r| %>
+<div class="card">
+<div class="card-body">
+<h5 class="card-title"><%= r['city'] %>, <%= r['country'] %></h5>
+  <p class="card-text">Author: <%= r['author'] %></p>
+  <p class="card-text">Review: <%= r['content'] %></p>
+  </div>
+  </div>
+  <% end %>
